@@ -1,0 +1,63 @@
+body
+{
+  background-image: url(https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-attachment: fixed;
+  background-size: cover;
+  filter: grayscale(80%);
+    background-repeat: no-repeat;
+  background-position: right top;
+}
+input[type=text], input[type=email],#number, #dropdown, #desc
+{
+  width: 100%;
+}
+
+form
+{
+  background-color:rgba(2,16,28,0.8);
+  width: 40%;
+  color: white;
+  margin: 20 auto;
+  font-size: 18px;
+  padding: 20px;
+}
+.alert{
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+}
+
+legend
+{
+  text-align: center;
+}
+#submit
+{
+    margin: 0 auto;
+    display: block;
+}
+.check
+{
+  font-size: 13px;
+}
+
+#title,#description
+{
+  color: white;
+  text-align: center;
+}
+#header
+{
+  color: white;
+}
+@media(max-width:700px)
+{
+  form 
+  {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+}
