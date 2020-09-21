@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Form</title>
+      <link rel="stylesheet" type="text/css" href="p1.css">
+  </head>
+
+    
+  <body>
+      
+    <h1 id="title">Form</h1>
+    <p id="description"><i>Thank you for taking the time to fill this form</i></p>
+    
+    <div class="alert">Your message has been sent</div>
+
+    <form id="contactform" onsubmit="return validateform()" method="post" >  
+    <fieldset>
+          
+      <legend>Form</legend>
+        
+      <label>Name*</label><br>
+      <input type="text" placeholder="Enter your name" name="name" id="name" required><br><br>
+      
+      <label>Email*</label><br>
+      <input type="email" placeholder="Enter Email Id" name="email" required id="email "><br><br>
+      
+      <label>Phone Number*</label><br>
+      <input type="tel" placeholder="Enter your phone number" name="number" id=" number"><br><br>
+       
+      <label>Gender</label><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <br>
+        
+      <label>Skills</label><br>
+      <select id="dropdown" name="skills" placeholder="Select your skills" required>
+        <option value="ui">UI</option>
+        <option value="ux">UX</option>
+        <option value="backend">Backend</option>
+        <option value="css">CSS</option>
+        <option value="other">Other</option>
+      </select><br><br>
+
+      <label>Description*</label><br>
+      <textarea name="desc" rows="4" cols="50" id="desc" required></textarea><br>
+      <br>
+
+      <input type="submit" id="submit">
+
+      </fieldset>
+    </form>
+      
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+     <script src="p1.js"></script>
+  </body>
+    
+</html>
